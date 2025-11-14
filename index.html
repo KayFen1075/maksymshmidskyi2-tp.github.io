@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAKSYM SHMIDSKYI 2-TP Eksplorator Układu Słonecznego</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom scrollbar for a more thematic feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #111827; /* bg-gray-900 */
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #4f46e5; /* indigo-600 */
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #6366f1; /* indigo-500 */
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-gray-100 font-sans">
+    <header
+      class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50 shadow-lg shadow-indigo-500/10"
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 text-indigo-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2h1a2 2 0 002-2v-1a2 2 0 012-2h1.945M7.88 7.88l.01.01M16.12 7.88l.01.01M12 21a9 9 0 110-18 9 9 0 010 18z"
+              />
+            </svg>
+            <h1
+              class="text-xl sm:text-2xl font-bold text-white ml-3 tracking-wider"
+            >
+              MAKSYM SHMIDSKYI 2-TP
+            </h1>
+            <h2
+              class="text-xl sm:text-2xl font-bold text-white ml-3 tracking-wider"
+            >
+              Eksplorator Układu Słonecznego
+            </h2>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <section class="text-center py-16 sm:py-20">
+        <h1
+          class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-500 tracking-tight"
+        >
+          Podróż przez nasze kosmiczne sąsiedztwo
+        </h1>
+        <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-300">
+          Odkryj cuda naszego Układu Słonecznego, od palącej powierzchni
+          Merkurego po lodowe pierścienie Saturna. Poznaj fascynujące szczegóły
+          na temat każdej planety i naszego miejsca w bezmiarze kosmosu.
+        </p>
+      </section>
+
+      <section id="planets" class="py-16">
+        <h2 class="text-3xl font-bold text-center mb-12 text-white">Planety</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div
+            class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out group"
+          >
+            <img
+              class="w-full h-48 object-cover"
+              src="https://picsum.photos/seed/mercury/600/400"
+              alt="Artystyczna wizja Merkurego"
+            />
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-2 text-white">Merkury</h3>
+              <p class="text-gray-400 mb-4 h-24 overflow-hidden">
+                Najmniejsza planeta w naszym Układzie Słonecznym i najbliższa
+                Słońcu, ma pokrytą kraterami powierzchnię przypominającą
+                Księżyc.
+              </p>
+              <a
+                href="https://pl.wikipedia.org/wiki/Merkury"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block bg-indigo-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-indigo-500 transition-colors duration-300 group-hover:animate-pulse"
+                >Dowiedz się więcej</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out group"
+          >
+            <img
+              class="w-full h-48 object-cover"
+              src="https://picsum.photos/seed/venus/600/400"
+              alt="Artystyczna wizja Wenus"
+            />
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-2 text-white">Wenus</h3>
+              <p class="text-gray-400 mb-4 h-24 overflow-hidden">
+                Wenus to druga planeta od Słońca, znana z gęstej, toksycznej
+                atmosfery, która zatrzymuje ciepło w niekontrolowanym efekcie
+                cieplarnianym.
+              </p>
+              <a
+                href="https://pl.wikipedia.org/wiki/Wenus"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block bg-indigo-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-indigo-500 transition-colors duration-300 group-hover:animate-pulse"
+                >Dowiedz się więcej</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out group"
+          >
+            <img
+              class="w-full h-48 object-cover"
+              src="https://picsum.photos/seed/earth/600/400"
+              alt="Artystyczna wizja Ziemi"
+            />
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-2 text-white">Ziemia</h3>
+              <p class="text-gray-400 mb-4 h-24 overflow-hidden">
+                Nasza planeta macierzysta jest jedynym znanym nam miejscem
+                zamieszkanym przez żywe istoty. To także jedyna planeta w naszym
+                Układzie Słonecznym z ciekłą wodą na powierzchni.
+              </p>
+              <a
+                href="https://pl.wikipedia.org/wiki/Ziemia"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block bg-indigo-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-indigo-500 transition-colors duration-300 group-hover:animate-pulse"
+                >Dowiedz się więcej</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out group"
+          >
+            <img
+              class="w-full h-48 object-cover"
+              src="https://picsum.photos/seed/mars/600/400"
+              alt="Artystyczna wizja Marsa"
+            />
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-2 text-white">Mars</h3>
+              <p class="text-gray-400 mb-4 h-24 overflow-hidden">
+                Mars to pyłowy, zimny, pustynny świat z bardzo rzadką atmosferą.
+                Istnieją mocne dowody na to, że miliardy lat temu Mars był
+                wilgotniejszy i cieplejszy, z gęstszą atmosferą.
+              </p>
+              <a
+                href="https://pl.wikipedia.org/wiki/Mars"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block bg-indigo-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-indigo-500 transition-colors duration-300 group-hover:animate-pulse"
+                >Dowiedz się więcej</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out group"
+          >
+            <img
+              class="w-full h-48 object-cover"
+              src="https://picsum.photos/seed/jupiter/600/400"
+              alt="Artystyczna wizja Jowisza"
+            />
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-2 text-white">Jowisz</h3>
+              <p class="text-gray-400 mb-4 h-24 overflow-hidden">
+                Jowisz jest ponad dwukrotnie masywniejszy niż wszystkie
+                pozostałe planety naszego Układu Słonecznego razem wzięte.
+                Wielka Czerwona Plama na tej olbrzymiej planecie to wielowiekowa
+                burza większa od Ziemi.
+              </p>
+              <a
+                href="https://pl.wikipedia.org/wiki/Jowisz"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block bg-indigo-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-indigo-500 transition-colors duration-300 group-hover:animate-pulse"
+                >Dowiedz się więcej</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out group"
+          >
+            <img
+              class="w-full h-48 object-cover"
+              src="https://picsum.photos/seed/saturn/600/400"
+              alt="Artystyczna wizja Saturna"
+            />
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-2 text-white">Saturn</h3>
+              <p class="text-gray-400 mb-4 h-24 overflow-hidden">
+                Ozdobiony olśniewającym, złożonym systemem lodowych pierścieni,
+                Saturn jest unikalny w naszym Układzie Słonecznym. Inne
+                planety-olbrzymy również mają pierścienie, ale żadne nie są tak
+                spektakularne jak te Saturna.
+              </p>
+              <a
+                href="https://pl.wikipedia.org/wiki/Saturn"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block bg-indigo-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-indigo-500 transition-colors duration-300 group-hover:animate-pulse"
+                >Dowiedz się więcej</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out group"
+          >
+            <img
+              class="w-full h-48 object-cover"
+              src="https://picsum.photos/seed/uranus/600/400"
+              alt="Artystyczna wizja Urana"
+            />
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-2 text-white">Uran</h3>
+              <p class="text-gray-400 mb-4 h-24 overflow-hidden">
+                Uran – siódma planeta od Słońca – obraca się pod kątem prawie 90
+                stopni w stosunku do płaszczyzny swojej orbity. To unikalne
+                nachylenie sprawia, że Uran wydaje się obracać na boku.
+              </p>
+              <a
+                href="https://pl.wikipedia.org/wiki/Uran"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block bg-indigo-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-indigo-500 transition-colors duration-300 group-hover:animate-pulse"
+                >Dowiedz się więcej</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out group"
+          >
+            <img
+              class="w-full h-48 object-cover"
+              src="https://picsum.photos/seed/neptune/600/400"
+              alt="Artystyczna wizja Neptuna"
+            />
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-2 text-white">Neptun</h3>
+              <p class="text-gray-400 mb-4 h-24 overflow-hidden">
+                Neptun – ósma i najdalsza duża planeta krążąca wokół naszego
+                Słońca – jest ciemny, zimny i smagany naddźwiękowymi wiatrami.
+                Była to pierwsza planeta odkryta dzięki obliczeniom
+                matematycznym.
+              </p>
+              <a
+                href="https://pl.wikipedia.org/wiki/Neptun"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block bg-indigo-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-indigo-500 transition-colors duration-300 group-hover:animate-pulse"
+                >Dowiedz się więcej</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="data-table" class="py-16">
+        <h2 class="text-3xl font-bold text-center mb-12 text-white">
+          Porównanie danych planetarnych
+        </h2>
+        <div class="overflow-x-auto bg-gray-800 rounded-lg shadow-lg">
+          <table class="w-full text-sm text-left text-gray-300">
+            <thead class="text-xs text-gray-100 uppercase bg-gray-700/50">
+              <tr>
+                <th scope="col" class="px-6 py-3 tracking-wider">Planeta</th>
+                <th scope="col" class="px-6 py-3 tracking-wider">Średnica</th>
+                <th scope="col" class="px-6 py-3 tracking-wider">
+                  Odległość od Słońca
+                </th>
+                <th scope="col" class="px-6 py-3 tracking-wider">
+                  Długość roku
+                </th>
+                <th scope="col" class="px-6 py-3 tracking-wider">Księżyce</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                class="border-b border-gray-700 hover:bg-gray-700/30 transition-colors duration-200"
+              >
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-white whitespace-nowrap"
+                >
+                  Merkury
+                </th>
+                <td class="px-6 py-4">4 879 km</td>
+                <td class="px-6 py-4">57,9 mln km</td>
+                <td class="px-6 py-4">88 dni ziemskich</td>
+                <td class="px-6 py-4">0</td>
+              </tr>
+              <tr
+                class="border-b border-gray-700 hover:bg-gray-700/30 transition-colors duration-200"
+              >
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-white whitespace-nowrap"
+                >
+                  Wenus
+                </th>
+                <td class="px-6 py-4">12 104 km</td>
+                <td class="px-6 py-4">108,2 mln km</td>
+                <td class="px-6 py-4">225 dni ziemskich</td>
+                <td class="px-6 py-4">0</td>
+              </tr>
+              <tr
+                class="border-b border-gray-700 hover:bg-gray-700/30 transition-colors duration-200"
+              >
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-white whitespace-nowrap"
+                >
+                  Ziemia
+                </th>
+                <td class="px-6 py-4">12 742 km</td>
+                <td class="px-6 py-4">149,6 mln km</td>
+                <td class="px-6 py-4">365,25 dni</td>
+                <td class="px-6 py-4">1</td>
+              </tr>
+              <tr
+                class="border-b border-gray-700 hover:bg-gray-700/30 transition-colors duration-200"
+              >
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-white whitespace-nowrap"
+                >
+                  Mars
+                </th>
+                <td class="px-6 py-4">6 779 km</td>
+                <td class="px-6 py-4">227,9 mln km</td>
+                <td class="px-6 py-4">687 dni ziemskich</td>
+                <td class="px-6 py-4">2</td>
+              </tr>
+              <tr
+                class="border-b border-gray-700 hover:bg-gray-700/30 transition-colors duration-200"
+              >
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-white whitespace-nowrap"
+                >
+                  Jowisz
+                </th>
+                <td class="px-6 py-4">139 822 km</td>
+                <td class="px-6 py-4">778,6 mln km</td>
+                <td class="px-6 py-4">11,9 lat ziemskich</td>
+                <td class="px-6 py-4">95</td>
+              </tr>
+              <tr
+                class="border-b border-gray-700 hover:bg-gray-700/30 transition-colors duration-200"
+              >
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-white whitespace-nowrap"
+                >
+                  Saturn
+                </th>
+                <td class="px-6 py-4">116 464 km</td>
+                <td class="px-6 py-4">1,4 mld km</td>
+                <td class="px-6 py-4">29,5 lat ziemskich</td>
+                <td class="px-6 py-4">146</td>
+              </tr>
+              <tr
+                class="border-b border-gray-700 hover:bg-gray-700/30 transition-colors duration-200"
+              >
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-white whitespace-nowrap"
+                >
+                  Uran
+                </th>
+                <td class="px-6 py-4">50 724 km</td>
+                <td class="px-6 py-4">2,9 mld km</td>
+                <td class="px-6 py-4">84 lata ziemskie</td>
+                <td class="px-6 py-4">27</td>
+              </tr>
+              <tr class="hover:bg-gray-700/30 transition-colors duration-200">
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-white whitespace-nowrap"
+                >
+                  Neptun
+                </th>
+                <td class="px-6 py-4">49 244 km</td>
+                <td class="px-6 py-4">4,5 mld km</td>
+                <td class="px-6 py-4">164,8 lat ziemskich</td>
+                <td class="px-6 py-4">14</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="fun-facts" class="py-16">
+        <h2 class="text-3xl font-bold text-center mb-12 text-white">
+          Kosmiczne ciekawostki
+        </h2>
+        <div class="max-w-3xl mx-auto bg-gray-800 p-8 rounded-lg shadow-lg">
+          <ol class="list-decimal list-inside space-y-4 text-gray-300">
+            <li class="pl-2">
+              <span class="font-semibold text-indigo-400 mr-2">1.</span>Słońce
+              stanowi 99,86% masy Układu Słonecznego.
+            </li>
+            <li class="pl-2">
+              <span class="font-semibold text-indigo-400 mr-2">2.</span>Dzień na
+              Wenus jest dłuższy niż jej rok. Wenus obraca się tak wolno, że
+              jeden dzień trwa 243 dni ziemskie, podczas gdy okrąża Słońce w
+              zaledwie 225 dni ziemskich.
+            </li>
+            <li class="pl-2">
+              <span class="font-semibold text-indigo-400 mr-2">3.</span>Na Ziemi
+              jest więcej drzew niż gwiazd w Drodze Mlecznej. Naukowcy szacują,
+              że na naszej planecie jest około 3 bilionów drzew, w porównaniu do
+              100-400 miliardów gwiazd w naszej galaktyce.
+            </li>
+            <li class="pl-2">
+              <span class="font-semibold text-indigo-400 mr-2">4.</span>Ślady
+              pozostawione na Księżycu pozostaną tam przez co najmniej 100
+              milionów lat, ponieważ nie ma wiatru ani wody, które mogłyby je
+              zniszczyć.
+            </li>
+            <li class="pl-2">
+              <span class="font-semibold text-indigo-400 mr-2">5.</span>Gdybyś
+              mógł polecieć samolotem na Słońce, podróż zajęłaby 21 lat.
+            </li>
+            <li class="pl-2">
+              <span class="font-semibold text-indigo-400 mr-2">6.</span>Gęstość
+              Saturna jest tak niska, że unosiłby się na wodzie, gdybyś znalazł
+              wystarczająco dużą wannę.
+            </li>
+            <li class="pl-2">
+              <span class="font-semibold text-indigo-400 mr-2">7.</span
+              >Najzimniejszym znanym miejscem we wszechświecie jest Mgławica
+              Bumerang, gdzie temperatura wynosi -272,15 stopnia Celsjusza
+              (-457,87 Fahrenheita).
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 border-t border-gray-700">
+      <div
+        class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-gray-400"
+      >
+        <p>
+          &copy; 2025 MAKSYM SHMIDSKYI 2-TP Eksplorator Układu Słonecznego.
+          Wszelkie prawa zastrzeżone.
+        </p>
+        <p class="mt-2 text-sm">
+          Strona demonstracyjna stworzona przez MAKSYM SHMIDSKYI 2-TP przy
+          użyciu HTML i Tailwind CSS.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
